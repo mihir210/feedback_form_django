@@ -1,6 +1,6 @@
 # feedback_form_django
 
-# for save values 
+# for save details
 
 you need to add this code in django app in models.py file
    ```shell

@@ -23,6 +23,14 @@ you need to add host name in settings.py file
 
    ```shell
    ALLOWED_HOSTS = ['*']
+   
+   STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    # '/var/www/static/',
+   ]
+   
+   STATIC_ROOT = 'staticfiles'
+   STATIC_URL = '/static/'
    ```
    
 # for deploy app

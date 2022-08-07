@@ -83,3 +83,30 @@ note : app_name is your app name in django app
    ```shell
    python manage.py runserver
    ```
+   
+   
+  # for deploy app in heroku
+  
+  Install the Heroku CLI
+   Download and install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+   ```shell
+   $ heroku login
+   ```
+   
+   Create a new Git repository
+   Initialize a git repository in a new or existing directory
+   ```shell
+   $ cd my-project/
+   $ git init
+   $ heroku git:remote -a asx1w223
+   ```
+   
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+   ```shell
+   $ git add .
+   $ git commit -am "make it better"
+   $ git push heroku master
+   ```

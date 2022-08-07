@@ -31,6 +31,10 @@ you need to add host name in settings.py file
    
    STATIC_ROOT = 'staticfiles'
    STATIC_URL = '/static/'
+   
+   INSTALLED_APPS = [
+    'home.apps.HomeConfig',
+   ]
    ```
    
 # for deploy app
